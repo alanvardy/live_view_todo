@@ -15,5 +15,5 @@ config :live_view_todos, LiveViewTodosWeb.Endpoint,
 config :live_view_todos, LiveViewTodos.Repo,
   username: "postgres",
   password: "postgres",
-  database: "live_view_todos_prod",
+  database: "tododb",
   pool_size: 15
