@@ -16,4 +16,5 @@ config :live_view_todos, LiveViewTodos.Repo,
   username: "postgres",
   password: "postgres",
   database: "tododb",
+  url: System.get_env("DATABASE_URL"),
   pool_size: 15
