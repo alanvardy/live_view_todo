@@ -29,6 +29,17 @@ h6{font-size: 1.4rem; letter-spacing: 0; line-height: 1.2}
   justify-content: center;
 }
 
+.footer {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
 select {
   width: auto;
 }

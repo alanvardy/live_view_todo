@@ -1,2 +1,5 @@
 <h1>Todo List</h1>
+<small>
+  Built with live view, updates are instantaneous and update across all users.
+</small>
 <%= live_render(@conn, LiveViewTodosWeb.TodoLive) %>
