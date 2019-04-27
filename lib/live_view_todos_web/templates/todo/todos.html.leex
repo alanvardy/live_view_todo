@@ -1,15 +1,11 @@
-<div class="row">
-  <div class="column">
-    <form action="#" phx-submit="add">
-      <%= text_input :todo, :title, placeholder: "What do you want to get done?" %>
-      <%= submit "Add", phx_disable_with: "Adding...", class: "button button-outline" %>
-    </form>
-    <%= for todo <- @todos do %>
-    <div>
-      <%= checkbox :todo, :done, phx_click: "toggle_done", phx_value: todo.id, value: todo.done %>
-      <%= todo.title %>
-      <%= link "delete", to: '#', phx_click: "remove", phx_value: todo.id %>
-    </div>
-    <% end %>
-  </div>
-</div>
+      <%= for todo <- @todos do %>
+      <div>
+        <%= checkbox :todo, :done, phx_click: "toggle_done", phx_value: todo.id, value: todo.done %>
+        <%= todo.title %>
+        <%= link "delete", to: '#', phx_click: "remove", phx_value: todo.id %>
+      </div>
+      <% end %>
+      <form action="#" phx-submit="add" class="todo">
+        <%= text_input :todo, :title, placeholder: "What do you want to get done?" %>
+        <%= submit "Add", phx_disable_with: "Adding...", class: "button button-outline" %>
+      </form>

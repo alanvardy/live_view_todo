@@ -22,7 +22,9 @@
     </main>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
     <div class="footer">
-      <a href="https://www.alanvardy.com/">alanvardy.com</a>
+      <small>
+        Built by <a href="https://www.alanvardy.com/">alanvardy</a> with Phoenix and LiveView
+      </small>
     </div>
   </body>
 </html>
