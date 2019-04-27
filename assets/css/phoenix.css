@@ -649,11 +649,13 @@ h6 {
   .todo-box {
     margin: 0 50px 0 50px;
   }
+}
 
 @media (min-width: 80.0rem) {
   .todo-box {
     margin: 0 75px 0 75px;
   }
+}
 
 @media (min-width: 120.0rem) {
   .todo-box {
