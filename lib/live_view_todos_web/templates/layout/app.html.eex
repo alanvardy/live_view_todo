@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <section class="container">
+      <section class="container heading">
         <a href="http://phoenixframework.org/" class="phx-logo">
           <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
         </a>
